@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+}
+
+.heart {
+  display: inline-block;
+  margin: 150px;
+  position: relative;
+  animation: 0.7s ease-in-out infinite alternate-reverse heartbeat;
+}
+
+@keyframes heartbeat {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
+
+.square {
+  height: 50px;
+  width: 50px;
+  background: red;
+  top: 100%;
+  left: 50px;
+  transform: rotate(45deg);
+}
+
+.circular1 {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background: red;
+  left: 100%;
+  bottom: 100%;
+  transform: rotate(45deg) translate(0, 75%);
+  border-radius: 50% 50% 0 0;
+}
+
+.circular2 {
+  position: absolute;
+  height: 50px;
+  width: 50px;
+  background: red;
+  bottom: 100%;
+  right: 100%;
+  transform: rotate(45deg) translate(75%, 0);
+  border-radius: 50% 0 0 50%;
+}
